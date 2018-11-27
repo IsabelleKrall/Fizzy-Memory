@@ -15,3 +15,11 @@ const visableArray = Array.from(visable);
 emptyarray = [];
 complete = [];
 counter = 0;
+
+
+//Show the selected cards when clicking:
+visableArray.forEach( (picture)=> {
+  picture.addEventListener('click', ()=>{
+    picture.classList.add('view-picture')
+  });
+});
