@@ -7,7 +7,6 @@
 body{
   width: 100%;
   height: 100vh;
-
   background-color: white;
   display: flex;
   justify-content: center;
@@ -27,27 +26,31 @@ body{
 .card-box {
   width: 200px;
   height: 200px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  background-color: yellow;
+  border: 1px solid white;
+  background-color: hotpink;
   transition: all 0.5s ease-in;
   /* pointer-events: none; */
+}
+
+.card-box:hover {
+  background-color: white;
 }
 
 
   .card-box img{
   pointer-events: none;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   transform: rotateX(0deg);
   transition: all 0.5s ease-in;
   opacity: 0;
-  border-radius: 10px;
-  /* background-color: white;  */
+  border-radius: 0px;
+  background-color: blue; 
 }
 
 
 .view-picture img{
   opacity: 1;
-  transform: rotateX(180deg);
+  transform: rotateY(-180deg);
   transition: all 0.5s ease-in;
 }
