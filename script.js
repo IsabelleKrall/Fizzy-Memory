@@ -10,14 +10,50 @@ const visable = document.querySelectorAll('.card-box');
 
 const visableArray = Array.from(visable);
 
-emptyarray = [];
-complete = [];
+guess = [];
+completed = [];
 counter = 0;
 
 
 //Show the selected cards when clicking:
 visableArray.forEach( (picture)=> {
   picture.addEventListener('click', ()=>{
-    picture.classList.add('view-picture')
+    picture.classList.add('flip');
+    picture.classList.add('view-picture');
   });
+
+//Select 2 cards and see if they match:
+
+picture.addEventListener('click', (event) =>{
+  guess.push(event.target.dataset.number);
+  completed.push(picture);
+
+  if (guess.length === 2) {
+    container.classList.add('stop');
+
+    setTimeout(function(){
+      container.classList.remove('stop');
+    },900);
+
+    if (guess[0] === guess[1]) {
+      completed[0].classList.add('match');
+      completed[1].classList.add('match');
+
+      guess = [];
+      completed = [];
+      counter++
+      }
+      // If two cards dont match, hide the elements:
+      else {
+        setTimeout(function(){
+          completed[0].classList.remove('view-picture');
+          completed[0].classList.remove('flip');
+          completed[1].classList.remove('flip');
+          completed[1].classList.remove('view-picture');
+          guess=[];
+          completed=[];
+        },1200);
+      }
+    }
+  })
 });
