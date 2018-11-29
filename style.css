@@ -13,7 +13,6 @@ body{
   align-items: center;
 }
 
-
 .grid-container {
   max-width: 1020px;
   display: flex;
@@ -36,6 +35,11 @@ body{
   background-color: white;
 }
 
+.flip{
+  background-color: yellow;
+  transform: rotateY(180deg);
+  transitiion: all 0.5s ease-in;
+}
 
   .card-box img{
   pointer-events: none;
@@ -44,13 +48,18 @@ body{
   transform: rotateX(0deg);
   transition: all 0.5s ease-in;
   opacity: 0;
-  border-radius: 0px;
-  background-color: blue; 
 }
 
-
+/* Flip and show cards: */
 .view-picture img{
   opacity: 1;
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
   transition: all 0.5s ease-in;
 }
+
+.match {
+  background-color: green;
+}
+
+.stop{
+  pointer-events: none;
