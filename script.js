@@ -56,4 +56,29 @@ picture.addEventListener('click', (event) =>{
       }
     }
   })
+
+  const button = document.querySelector('.play-again');
+  visableArray.forEach((picture)=>{
+    button.addEventListener('click', (event)=>{
+      picture.classList.remove('flip');
+      picture.classList.remove('view-picture');
+      picture.classList.remove('completed');
+      picture.classList.add('rotate');
+      container.classList.add('shake');
+      guess = [];
+      completed = [];
+      counter = 0;
+      setTimeout(function(){
+        container.classList.remove('shake');
+        picture.classList.remove('rotate');
+      },500);
+
+      setTimeout(function(){
+        for (var i = container.children.length; i >= 0; i--) {
+          container.appendChild(container.children[Math.random() * i | 0]);
+        }
+      },500);
+
+    })
+  })
 });
