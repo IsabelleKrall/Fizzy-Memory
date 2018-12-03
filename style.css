@@ -1,30 +1,34 @@
-*,
-*::before,
-*:: after {
+*{
   box-sizing: border-box;
 }
 
 body{
-  width: 100%;
-  height: 100vh;
   background-color: white;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  font-family: Helvetica;
+}
+
+img {
+  width: 50px;
+  height: 50px;
 }
 
 .grid-container {
-  max-width: 1020px;
+  width: 60%;
+  height: 60%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .card-box {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px solid white;
   background-color: hotpink;
   transition: all 0.5s ease-in;
@@ -41,10 +45,10 @@ body{
   transitiion: all 0.5s ease-in;
 }
 
-  .card-box img{
+.card-box img{
   pointer-events: none;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   transform: rotateX(0deg);
   transition: all 0.5s ease-in;
   opacity: 0;
@@ -61,5 +65,23 @@ body{
   background-color: green;
 }
 
-.stop{
+.stop {
   pointer-events: none;
+}
+
+.play-again{
+  width: 150px;
+  height: 60px;
+  padding: 8px;
+  margin-top: 15px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: hotpink;
+  color: white;
+}
+
+.play-again:hover{
+  background-color: green;
+}
