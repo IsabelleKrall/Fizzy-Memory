@@ -6,7 +6,7 @@ This is my fizzy memory game - our first JavaScript-assignment at Yrgo.
 ## Testers
 
 - [Rebecca Klaening](https://github.com/RebeccaKlaening) - Mac
-- [Gabriel Aanesen](https://github.com/GabrielAanesen) - Mac
+- [Charmaine Wang](https://github.com/Charmaine-wang) - Mac
 
 
 ## Installation
