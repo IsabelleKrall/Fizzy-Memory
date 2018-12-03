@@ -57,6 +57,8 @@ picture.addEventListener('click', (event) =>{
     }
   })
 
+  //Restart the game, randomize the cards and adds animation.
+
   const button = document.querySelector('.play-again');
   visableArray.forEach((picture)=>{
     button.addEventListener('click', (event)=>{
