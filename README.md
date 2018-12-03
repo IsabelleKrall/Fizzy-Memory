@@ -1,6 +1,6 @@
 # Fizzy-Memory
 
-<img src="https://media.giphy.com/media/RrU8f9lImvJja/giphy.gif" width="100%">
+<img src="https://media.giphy.com/media/A81oihJnvAvwk/giphy.gif" width="100%">
 This is my fizzy memory game - our first JavaScript-assignment at Yrgo.
 
 ## Testers
