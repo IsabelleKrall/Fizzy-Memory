@@ -3,7 +3,7 @@
 }
 
 h1{
-  color: hotpink;
+  color: white;
   margin-bottom: 5px;
 }
 
@@ -14,6 +14,7 @@ body{
   flex-direction: column;
   align-items: center;
   font-family: Helvetica;
+  background-color: #00D9FF;
 }
 
 img {
@@ -45,7 +46,7 @@ img {
 }
 
 .flip{
-  background-color: yellow;
+  background-color: #00CC96;
   transform: rotateY(180deg);
   transitiion: all 0.5s ease-in;
 }
@@ -67,7 +68,7 @@ img {
 }
 
 .match {
-  background-color: #00D9FF;
+  background-color: #FFB60A;
 }
 
 .stop {
