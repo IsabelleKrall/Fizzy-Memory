@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+h1{
+  color: hotpink;
+  margin-bottom: 5px;
+}
+
 body{
   background-color: white;
   display: flex;
@@ -62,7 +67,7 @@ img {
 }
 
 .match {
-  background-color: green;
+  background-color: #00D9FF;
 }
 
 .stop {
@@ -83,5 +88,18 @@ img {
 }
 
 .play-again:hover{
-  background-color: green;
+  background-color: #00D9FF;
+  color: black;
+}
+
+.shake {
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.rotate{
+  transform: rotate(360deg);
+}
+
+.restart{
+  background-color: hotpink;
 }
